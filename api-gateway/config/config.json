@@ -1,0 +1,17 @@
+{
+    "gatewayPort": 8000, // Or whichever port you prefer
+    "routes": [
+      {
+        "path": "/products",
+        "method": "GET",
+        "target": "http://product-service:3001" // Assuming 'product-service'
+      },
+      {
+        "path": "/users/:id", 
+        "method": "GET",
+        "target": "http://user-service:3002" 
+      }
+      // ... more routes as needed
+    ]
+  }
+  
